@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/langji/Desktop/summer-demo/Zara&#x4eff;&#x5199;/Zara&#x4eff;&#x5199;/VCHome.h">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/langji/Desktop/summer-demo/Zara&#x4eff;&#x5199;/Zara&#x4eff;&#x5199;/VCHome.m">
+   </FileRef>
+   <FileRef
+      location = "group:../Picture">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC42F78626A661A7009BD5C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC42F78526A661A7009BD5C6 /* AppDelegate.m */; };
+		BC42F78926A661A7009BD5C6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC42F78826A661A7009BD5C6 /* SceneDelegate.m */; };
+		BC42F78C26A661A7009BD5C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC42F78B26A661A7009BD5C6 /* ViewController.m */; };
+		BC42F78F26A661A7009BD5C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42F78D26A661A7009BD5C6 /* Main.storyboard */; };
+		BC42F79126A661A8009BD5C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC42F79026A661A8009BD5C6 /* Assets.xcassets */; };
+		BC42F79426A661A8009BD5C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42F79226A661A8009BD5C6 /* LaunchScreen.storyboard */; };
+		BC42F79726A661A8009BD5C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC42F79626A661A8009BD5C6 /* main.m */; };
+		BC42F7A126A661A9009BD5C6 /* Zara__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC42F7A026A661A9009BD5C6 /* Zara__Tests.m */; };
+		BC42F7AC26A661A9009BD5C6 /* Zara__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC42F7AB26A661A9009BD5C6 /* Zara__UITests.m */; };
+		BC42F7CB26A6A66C009BD5C6 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7CA26A6A66B009BD5C6 /* 1.jpg */; };
+		BC42F7CD26A6A7D1009BD5C6 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7CC26A6A7D1009BD5C6 /* 2.jpg */; };
+		BC42F7CF26A6A9BF009BD5C6 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7CE26A6A9BF009BD5C6 /* 3.jpg */; };
+		BC42F7D126A6A9C5009BD5C6 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7D026A6A9C5009BD5C6 /* 4.jpg */; };
+		BC42F7D326A6AA7C009BD5C6 /* SONY_LOGO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7D226A6AA7C009BD5C6 /* SONY_LOGO.jpeg */; };
+		BC42F7DB26A6B9F1009BD5C6 /* ViewControllerSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = BC42F7DA26A6B9F1009BD5C6 /* ViewControllerSetting.m */; };
+		BC42F7DE26A6B9FE009BD5C6 /* ViewControllerHome.m in Sources */ = {isa = PBXBuildFile; fileRef = BC42F7DD26A6B9FE009BD5C6 /* ViewControllerHome.m */; };
+		BC42F7E426A6BC7B009BD5C6 /* shezhi.png in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7E326A6BC7B009BD5C6 /* shezhi.png */; };
+		BC42F7E626A6BCE0009BD5C6 /* tupian.png in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7E526A6BCE0009BD5C6 /* tupian.png */; };
+		BC42F7F026A6EFDF009BD5C6 /* zhifu.png in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7EF26A6EFDF009BD5C6 /* zhifu.png */; };
+		BC42F7F226A6F0D9009BD5C6 /* pengyouquan.png in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7F126A6F0D9009BD5C6 /* pengyouquan.png */; };
+		BC42F7F426A6F13C009BD5C6 /* xiaolian.png in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7F326A6F13C009BD5C6 /* xiaolian.png */; };
+		BC42F7F626A6F196009BD5C6 /* qiabao.png in Resources */ = {isa = PBXBuildFile; fileRef = BC42F7F526A6F196009BD5C6 /* qiabao.png */; };
+		BC42F80426A7AA47009BD5C6 /* youjiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = BC42F80326A7AA47009BD5C6 /* youjiantou.png */; };
+		BC42F80626A7ABD4009BD5C6 /* zuojiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = BC42F80526A7ABD3009BD5C6 /* zuojiantou.png */; };
+		BC42F80826A7C3F8009BD5C6 /* touxiang.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC42F80726A7C3F8009BD5C6 /* touxiang.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC42F79D26A661A9009BD5C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC42F77926A661A7009BD5C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC42F78026A661A7009BD5C6;
+			remoteInfo = "Zara仿写";
+		};
+		BC42F7A826A661A9009BD5C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC42F77926A661A7009BD5C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC42F78026A661A7009BD5C6;
+			remoteInfo = "Zara仿写";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC42F78126A661A7009BD5C6 /* Zara仿写.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zara仿写.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC42F78426A661A7009BD5C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC42F78526A661A7009BD5C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC42F78726A661A7009BD5C6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		BC42F78826A661A7009BD5C6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		BC42F78A26A661A7009BD5C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BC42F78B26A661A7009BD5C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC42F78E26A661A7009BD5C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC42F79026A661A8009BD5C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC42F79326A661A8009BD5C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC42F79526A661A8009BD5C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC42F79626A661A8009BD5C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC42F79C26A661A9009BD5C6 /* Zara仿写Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zara仿写Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC42F7A026A661A9009BD5C6 /* Zara__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zara__Tests.m; sourceTree = "<group>"; };
+		BC42F7A226A661A9009BD5C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC42F7A726A661A9009BD5C6 /* Zara仿写UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zara仿写UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC42F7AB26A661A9009BD5C6 /* Zara__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zara__UITests.m; sourceTree = "<group>"; };
+		BC42F7AD26A661A9009BD5C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC42F7CA26A6A66B009BD5C6 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		BC42F7CC26A6A7D1009BD5C6 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		BC42F7CE26A6A9BF009BD5C6 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		BC42F7D026A6A9C5009BD5C6 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		BC42F7D226A6AA7C009BD5C6 /* SONY_LOGO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SONY_LOGO.jpeg; sourceTree = "<group>"; };
+		BC42F7D926A6B9F1009BD5C6 /* ViewControllerSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerSetting.h; sourceTree = "<group>"; };
+		BC42F7DA26A6B9F1009BD5C6 /* ViewControllerSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSetting.m; sourceTree = "<group>"; };
+		BC42F7DC26A6B9FE009BD5C6 /* ViewControllerHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerHome.h; sourceTree = "<group>"; };
+		BC42F7DD26A6B9FE009BD5C6 /* ViewControllerHome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerHome.m; sourceTree = "<group>"; };
+		BC42F7E326A6BC7B009BD5C6 /* shezhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shezhi.png; path = ../../../../Downloads/shezhi.png; sourceTree = "<group>"; };
+		BC42F7E526A6BCE0009BD5C6 /* tupian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tupian.png; sourceTree = "<group>"; };
+		BC42F7EF26A6EFDF009BD5C6 /* zhifu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhifu.png; sourceTree = "<group>"; };
+		BC42F7F126A6F0D9009BD5C6 /* pengyouquan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pengyouquan.png; sourceTree = "<group>"; };
+		BC42F7F326A6F13C009BD5C6 /* xiaolian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaolian.png; sourceTree = "<group>"; };
+		BC42F7F526A6F196009BD5C6 /* qiabao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qiabao.png; sourceTree = "<group>"; };
+		BC42F80326A7AA47009BD5C6 /* youjiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youjiantou.png; sourceTree = "<group>"; };
+		BC42F80526A7ABD3009BD5C6 /* zuojiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zuojiantou.png; sourceTree = "<group>"; };
+		BC42F80726A7C3F8009BD5C6 /* touxiang.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = touxiang.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC42F77E26A661A7009BD5C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC42F79926A661A9009BD5C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC42F7A426A661A9009BD5C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC42F77826A661A7009BD5C6 = {
+			isa = PBXGroup;
+			children = (
+				BC42F78326A661A7009BD5C6 /* Zara仿写 */,
+				BC42F79F26A661A9009BD5C6 /* Zara仿写Tests */,
+				BC42F7AA26A661A9009BD5C6 /* Zara仿写UITests */,
+				BC42F78226A661A7009BD5C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC42F78226A661A7009BD5C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC42F78126A661A7009BD5C6 /* Zara仿写.app */,
+				BC42F79C26A661A9009BD5C6 /* Zara仿写Tests.xctest */,
+				BC42F7A726A661A9009BD5C6 /* Zara仿写UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC42F78326A661A7009BD5C6 /* Zara仿写 */ = {
+			isa = PBXGroup;
+			children = (
+				BC42F7CA26A6A66B009BD5C6 /* 1.jpg */,
+				BC42F7CC26A6A7D1009BD5C6 /* 2.jpg */,
+				BC42F7CE26A6A9BF009BD5C6 /* 3.jpg */,
+				BC42F7D026A6A9C5009BD5C6 /* 4.jpg */,
+				BC42F7D226A6AA7C009BD5C6 /* SONY_LOGO.jpeg */,
+				BC42F7E326A6BC7B009BD5C6 /* shezhi.png */,
+				BC42F7E526A6BCE0009BD5C6 /* tupian.png */,
+				BC42F80726A7C3F8009BD5C6 /* touxiang.jpeg */,
+				BC42F7EF26A6EFDF009BD5C6 /* zhifu.png */,
+				BC42F7F126A6F0D9009BD5C6 /* pengyouquan.png */,
+				BC42F7F526A6F196009BD5C6 /* qiabao.png */,
+				BC42F7F326A6F13C009BD5C6 /* xiaolian.png */,
+				BC42F80326A7AA47009BD5C6 /* youjiantou.png */,
+				BC42F80526A7ABD3009BD5C6 /* zuojiantou.png */,
+				BC42F78426A661A7009BD5C6 /* AppDelegate.h */,
+				BC42F78526A661A7009BD5C6 /* AppDelegate.m */,
+				BC42F78726A661A7009BD5C6 /* SceneDelegate.h */,
+				BC42F78826A661A7009BD5C6 /* SceneDelegate.m */,
+				BC42F78A26A661A7009BD5C6 /* ViewController.h */,
+				BC42F78B26A661A7009BD5C6 /* ViewController.m */,
+				BC42F7DC26A6B9FE009BD5C6 /* ViewControllerHome.h */,
+				BC42F7DD26A6B9FE009BD5C6 /* ViewControllerHome.m */,
+				BC42F7D926A6B9F1009BD5C6 /* ViewControllerSetting.h */,
+				BC42F7DA26A6B9F1009BD5C6 /* ViewControllerSetting.m */,
+				BC42F78D26A661A7009BD5C6 /* Main.storyboard */,
+				BC42F79026A661A8009BD5C6 /* Assets.xcassets */,
+				BC42F79226A661A8009BD5C6 /* LaunchScreen.storyboard */,
+				BC42F79526A661A8009BD5C6 /* Info.plist */,
+				BC42F79626A661A8009BD5C6 /* main.m */,
+			);
+			path = "Zara仿写";
+			sourceTree = "<group>";
+		};
+		BC42F79F26A661A9009BD5C6 /* Zara仿写Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BC42F7A026A661A9009BD5C6 /* Zara__Tests.m */,
+				BC42F7A226A661A9009BD5C6 /* Info.plist */,
+			);
+			path = "Zara仿写Tests";
+			sourceTree = "<group>";
+		};
+		BC42F7AA26A661A9009BD5C6 /* Zara仿写UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC42F7AB26A661A9009BD5C6 /* Zara__UITests.m */,
+				BC42F7AD26A661A9009BD5C6 /* Info.plist */,
+			);
+			path = "Zara仿写UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC42F78026A661A7009BD5C6 /* Zara仿写 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC42F7B026A661A9009BD5C6 /* Build configuration list for PBXNativeTarget "Zara仿写" */;
+			buildPhases = (
+				BC42F77D26A661A7009BD5C6 /* Sources */,
+				BC42F77E26A661A7009BD5C6 /* Frameworks */,
+				BC42F77F26A661A7009BD5C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zara仿写";
+			productName = "Zara仿写";
+			productReference = BC42F78126A661A7009BD5C6 /* Zara仿写.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC42F79B26A661A9009BD5C6 /* Zara仿写Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC42F7B326A661A9009BD5C6 /* Build configuration list for PBXNativeTarget "Zara仿写Tests" */;
+			buildPhases = (
+				BC42F79826A661A9009BD5C6 /* Sources */,
+				BC42F79926A661A9009BD5C6 /* Frameworks */,
+				BC42F79A26A661A9009BD5C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC42F79E26A661A9009BD5C6 /* PBXTargetDependency */,
+			);
+			name = "Zara仿写Tests";
+			productName = "Zara仿写Tests";
+			productReference = BC42F79C26A661A9009BD5C6 /* Zara仿写Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC42F7A626A661A9009BD5C6 /* Zara仿写UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC42F7B626A661A9009BD5C6 /* Build configuration list for PBXNativeTarget "Zara仿写UITests" */;
+			buildPhases = (
+				BC42F7A326A661A9009BD5C6 /* Sources */,
+				BC42F7A426A661A9009BD5C6 /* Frameworks */,
+				BC42F7A526A661A9009BD5C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC42F7A926A661A9009BD5C6 /* PBXTargetDependency */,
+			);
+			name = "Zara仿写UITests";
+			productName = "Zara仿写UITests";
+			productReference = BC42F7A726A661A9009BD5C6 /* Zara仿写UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC42F77926A661A7009BD5C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BC42F78026A661A7009BD5C6 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					BC42F79B26A661A9009BD5C6 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = BC42F78026A661A7009BD5C6;
+					};
+					BC42F7A626A661A9009BD5C6 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = BC42F78026A661A7009BD5C6;
+					};
+				};
+			};
+			buildConfigurationList = BC42F77C26A661A7009BD5C6 /* Build configuration list for PBXProject "Zara仿写" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC42F77826A661A7009BD5C6;
+			productRefGroup = BC42F78226A661A7009BD5C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC42F78026A661A7009BD5C6 /* Zara仿写 */,
+				BC42F79B26A661A9009BD5C6 /* Zara仿写Tests */,
+				BC42F7A626A661A9009BD5C6 /* Zara仿写UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC42F77F26A661A7009BD5C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC42F7F626A6F196009BD5C6 /* qiabao.png in Resources */,
+				BC42F7F426A6F13C009BD5C6 /* xiaolian.png in Resources */,
+				BC42F7E426A6BC7B009BD5C6 /* shezhi.png in Resources */,
+				BC42F7D326A6AA7C009BD5C6 /* SONY_LOGO.jpeg in Resources */,
+				BC42F80826A7C3F8009BD5C6 /* touxiang.jpeg in Resources */,
+				BC42F7E626A6BCE0009BD5C6 /* tupian.png in Resources */,
+				BC42F7D126A6A9C5009BD5C6 /* 4.jpg in Resources */,
+				BC42F7CF26A6A9BF009BD5C6 /* 3.jpg in Resources */,
+				BC42F80426A7AA47009BD5C6 /* youjiantou.png in Resources */,
+				BC42F7CD26A6A7D1009BD5C6 /* 2.jpg in Resources */,
+				BC42F79426A661A8009BD5C6 /* LaunchScreen.storyboard in Resources */,
+				BC42F79126A661A8009BD5C6 /* Assets.xcassets in Resources */,
+				BC42F78F26A661A7009BD5C6 /* Main.storyboard in Resources */,
+				BC42F7F026A6EFDF009BD5C6 /* zhifu.png in Resources */,
+				BC42F7F226A6F0D9009BD5C6 /* pengyouquan.png in Resources */,
+				BC42F7CB26A6A66C009BD5C6 /* 1.jpg in Resources */,
+				BC42F80626A7ABD4009BD5C6 /* zuojiantou.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC42F79A26A661A9009BD5C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC42F7A526A661A9009BD5C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC42F77D26A661A7009BD5C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC42F78C26A661A7009BD5C6 /* ViewController.m in Sources */,
+				BC42F78626A661A7009BD5C6 /* AppDelegate.m in Sources */,
+				BC42F79726A661A8009BD5C6 /* main.m in Sources */,
+				BC42F78926A661A7009BD5C6 /* SceneDelegate.m in Sources */,
+				BC42F7DB26A6B9F1009BD5C6 /* ViewControllerSetting.m in Sources */,
+				BC42F7DE26A6B9FE009BD5C6 /* ViewControllerHome.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC42F79826A661A9009BD5C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC42F7A126A661A9009BD5C6 /* Zara__Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC42F7A326A661A9009BD5C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC42F7AC26A661A9009BD5C6 /* Zara__UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC42F79E26A661A9009BD5C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC42F78026A661A7009BD5C6 /* Zara仿写 */;
+			targetProxy = BC42F79D26A661A9009BD5C6 /* PBXContainerItemProxy */;
+		};
+		BC42F7A926A661A9009BD5C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC42F78026A661A7009BD5C6 /* Zara仿写 */;
+			targetProxy = BC42F7A826A661A9009BD5C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC42F78D26A661A7009BD5C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC42F78E26A661A7009BD5C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC42F79226A661A8009BD5C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC42F79326A661A8009BD5C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC42F7AE26A661A9009BD5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC42F7AF26A661A9009BD5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC42F7B126A661A9009BD5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Zara仿写/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-G.Zara--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC42F7B226A661A9009BD5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Zara仿写/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-G.Zara--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC42F7B426A661A9009BD5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Zara仿写Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-G.Zara--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zara仿写.app/Zara仿写";
+			};
+			name = Debug;
+		};
+		BC42F7B526A661A9009BD5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Zara仿写Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-G.Zara--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zara仿写.app/Zara仿写";
+			};
+			name = Release;
+		};
+		BC42F7B726A661A9009BD5C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Zara仿写UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-G.Zara--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zara仿写";
+			};
+			name = Debug;
+		};
+		BC42F7B826A661A9009BD5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Zara仿写UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-G.Zara--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zara仿写";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC42F77C26A661A7009BD5C6 /* Build configuration list for PBXProject "Zara仿写" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC42F7AE26A661A9009BD5C6 /* Debug */,
+				BC42F7AF26A661A9009BD5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC42F7B026A661A9009BD5C6 /* Build configuration list for PBXNativeTarget "Zara仿写" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC42F7B126A661A9009BD5C6 /* Debug */,
+				BC42F7B226A661A9009BD5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC42F7B326A661A9009BD5C6 /* Build configuration list for PBXNativeTarget "Zara仿写Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC42F7B426A661A9009BD5C6 /* Debug */,
+				BC42F7B526A661A9009BD5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC42F7B626A661A9009BD5C6 /* Build configuration list for PBXNativeTarget "Zara仿写UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC42F7B726A661A9009BD5C6 /* Debug */,
+				BC42F7B826A661A9009BD5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC42F77926A661A7009BD5C6 /* Project object */;
+}
