@@ -27,7 +27,7 @@
     //设置单元格
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     
-    //自动调整子视图的大小
+    //自动调整子视图的大小+
     _tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
     //设置代理
@@ -73,8 +73,8 @@
     }
     
     //设置单元格图片
-    NSLog(@"%ld %ld",indexPath.section, indexPath.row);
     cell.imageView.image = [[_imageData objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+    
     
     //设置子标题
     if(indexPath.section == 0) {
