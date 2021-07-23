@@ -12,8 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SettingViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic, strong)UITableView *tableView;
+@property(nonatomic, strong)UIBarButtonItem *leftButton;
+@property(nonatomic, strong)UIBarButtonItem *rightButton;
 @property NSMutableArray *normalTextData;
 @property NSMutableArray *normalImageData;
+@property (nonatomic, strong)UISwitch *mySwitch;
 
 @end
 

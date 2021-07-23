@@ -12,7 +12,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if([self.reuseIdentifier isEqualToString:@"second"]) {
-        _buttonOne = [[UIButton alloc] init];
+        _buttonOne = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.contentView addSubview:_buttonOne];
         _buttonTwo = [[UIButton alloc] init];
         [self.contentView addSubview:_buttonTwo];
@@ -25,10 +25,10 @@
 }
 
 - (void)layoutSubviews {
-    _buttonOne.frame = CGRectMake(5, 0, 95, 100);
-    _buttonTwo.frame = CGRectMake(100, 0, 95, 100);
-    _buttonThree.frame = CGRectMake(195, 0, 95, 100);
-    _buttonFour.frame = CGRectMake(290, 0, 95, 100);
+    _buttonOne.frame = CGRectMake(0, 10, 80, 80);
+    _buttonTwo.frame = CGRectMake(90, 10, 80, 80);
+    _buttonThree.frame = CGRectMake(180, 10, 80, 80);
+    _buttonFour.frame = CGRectMake(270, 10, 80, 80);
 }
 
 - (void)awakeFromNib {

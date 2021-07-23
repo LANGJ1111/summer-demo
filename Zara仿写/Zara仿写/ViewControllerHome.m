@@ -83,7 +83,6 @@
     _scrollView.showsHorizontalScrollIndicator = YES;
     //纵向滚动条
     _scrollView.showsHorizontalScrollIndicator = NO;
-    
     //设置图片
     for (int i = 0; i < 4; i++) {
         NSString *strName = [NSString stringWithFormat:@"%d.jpg", i + 1];

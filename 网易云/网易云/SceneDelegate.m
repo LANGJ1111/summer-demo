@@ -23,7 +23,6 @@
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     //设置window
     self.window = [[UIWindow alloc] initWithWindowScene:scene];
-    [self.window makeKeyAndVisible];
     
     //设置home和setting视图
     FindingViewController *findingViewController = [[FindingViewController alloc] init];
@@ -36,18 +35,26 @@
     mineViewController.title = @"我的";
     singingViewController.title = @"K歌";
     settingViewController.title = @"设置";
-    
-    //设置根视图控制器
-    UITabBarController *controllerTabBar = [[UITabBarController alloc] init];
 
-    NSArray *arrayViewController = [NSArray arrayWithObjects:findingViewController, communityViewController, mineViewController, singingViewController,  settingViewController, nil];
-    controllerTabBar.viewControllers = arrayViewController;
+    UINavigationController *findingNavigationController = [[UINavigationController alloc] initWithRootViewController:findingViewController];
+    UINavigationController *communityNavigationController = [[UINavigationController alloc] initWithRootViewController:communityViewController];
+    UINavigationController *mineNavigationController = [[UINavigationController alloc] initWithRootViewController:mineViewController];
+    UINavigationController *singingNavigationController = [[UINavigationController alloc] initWithRootViewController:singingViewController];
+    UINavigationController *settingNavigationController = [[UINavigationController alloc] initWithRootViewController:settingViewController];
+    
+    //设置分栏控制器
+    UITabBarController *controllerTabBar = [[UITabBarController alloc] init];
+    NSArray *arrayNavigationControllers = [NSArray arrayWithObjects:findingNavigationController, communityNavigationController, mineNavigationController, singingNavigationController,  settingNavigationController, nil];
+    controllerTabBar.viewControllers = arrayNavigationControllers;
+    controllerTabBar.tabBar.tintColor = [UIColor redColor];
     //将分栏控制器做为根视图控制器
     self.window.rootViewController = controllerTabBar;
     //通过索引确定显示哪一个控制器
-    controllerTabBar.selectedIndex = 0;
+    controllerTabBar.selectedIndex = 2;
     //设置分栏控制器的工具栏的透明度
     controllerTabBar.tabBar.translucent = NO;
+    
+    [self.window makeKeyAndVisible];
 }
 
 

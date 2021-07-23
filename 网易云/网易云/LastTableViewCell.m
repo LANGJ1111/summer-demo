@@ -12,14 +12,14 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if([self.reuseIdentifier isEqualToString:@"last"]) {
-        _button  = [[UIButton alloc] init];
-        [self.contentView addSubview:_button];
+        _label = [[UILabel alloc] init];
+        [self.contentView addSubview:_label];
     }
     return self;
 }
 
 - (void)layoutSubviews {
-    _button.frame = CGRectMake(0, 0, 390, 100);
+    _label.frame = CGRectMake(0, 0, 350, 60);
 }
 
 - (void)awakeFromNib {
