@@ -1,23 +1,23 @@
 //
-//  MineSubViewController.m
+//  SettingSubViewController.m
 //  网易云
 //
 //  Created by 浪极 on 2021/7/23.
 //
 
-#import "MineSubViewController.h"
+#import "SettingSubViewController.h"
 
-@interface MineSubViewController ()
+@interface SettingSubViewController ()
 
 @end
 
-@implementation MineSubViewController
+@implementation SettingSubViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"云盘";
+    self.title = @"扫码";
     
     _labelOne = [[UILabel alloc] init];
     _labelOne.text = @"您的账号等级不够";

@@ -57,7 +57,7 @@
 //    设
 //    置
     _mainScrollView = [[UIScrollView alloc] init];
-    _mainScrollView.frame = CGRectMake(0, 0, 390, 844);
+    _mainScrollView.frame = CGRectMake(0, 0, 390, 830);
     _mainScrollView.pagingEnabled = NO;
     _mainScrollView.contentSize = CGSizeMake(390, 850);
     _mainScrollView.bounces = YES;
@@ -280,7 +280,7 @@
     
     
     _buttonSixZero = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_buttonSixZero  setFrame:CGRectMake(7, 375, 90, 20)];
+    [_buttonSixZero  setFrame:CGRectMake(7, 385, 90, 20)];
     _buttonSixZero.showsTouchWhenHighlighted = YES;
     _buttonSixZero.selected = YES;
     [_buttonSixZero setTitle:@"创建歌单³" forState:UIControlStateNormal];
@@ -295,7 +295,7 @@
     [_subView addSubview:_buttonSixZero];
     
     _buttonSixOne = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_buttonSixOne  setFrame:CGRectMake(100, 375, 90, 20)];
+    [_buttonSixOne  setFrame:CGRectMake(100, 385, 90, 20)];
     _buttonSixOne.showsTouchWhenHighlighted = YES;
     _buttonSixOne.selected = NO;
     [_buttonSixOne setTitle:@"收藏歌单³" forState:UIControlStateNormal];
@@ -312,7 +312,7 @@
     
     
     _secondScrollView = [[UIScrollView alloc] init];
-    _secondScrollView.frame = CGRectMake(0, 405, 390, 140);
+    _secondScrollView.frame = CGRectMake(0, 415, 390, 140);
     _secondScrollView.pagingEnabled = YES;
     _secondScrollView.contentSize = CGSizeMake(390 * 2, 65);
     _secondScrollView.bounces = NO;
@@ -382,6 +382,8 @@
     [self.view addSubview:_mainScrollView];
 }
 
+
+
 - (void)buttonSixZeroPress {
     if (_buttonSixZero.selected == NO) {
         [_buttonSixZero setSelected:YES];
@@ -397,6 +399,8 @@
         [_secondScrollView scrollRectToVisible:CGRectMake(390, 0, 390, 140) animated:YES];
     }
 }
+
+
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
     if (scrollView.tag == 200) {
@@ -439,8 +443,8 @@
 }
 
 - (void)pressLeft {
-    MineSubViewController *mineSubViewController = [[MineSubViewController alloc] init];
-    [self.navigationController pushViewController:mineSubViewController animated:YES];
+    _mineSubViewController = [[MineSubViewController alloc] init];
+    [self.navigationController pushViewController:_mineSubViewController animated:YES];
 }
 
 - (void)pressRight {

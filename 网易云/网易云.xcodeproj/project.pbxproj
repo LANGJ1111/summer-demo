@@ -70,6 +70,8 @@
 		BC479C1326AA61C000F48817 /* MineSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC479C1226AA61C000F48817 /* MineSubViewController.m */; };
 		BC479C1526AA68A900F48817 /* threeOne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC479C1426AA68A800F48817 /* threeOne.jpg */; };
 		BC479C1726AA68B500F48817 /* threeTwo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC479C1626AA68B500F48817 /* threeTwo.jpg */; };
+		BC479C1A26AA9AFA00F48817 /* SettingSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC479C1926AA9AFA00F48817 /* SettingSubViewController.m */; };
+		BC479C1C26AAB17400F48817 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = BC479C1B26AAB17400F48817 /* white.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +173,9 @@
 		BC479C1226AA61C000F48817 /* MineSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineSubViewController.m; sourceTree = "<group>"; };
 		BC479C1426AA68A800F48817 /* threeOne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = threeOne.jpg; sourceTree = "<group>"; };
 		BC479C1626AA68B500F48817 /* threeTwo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = threeTwo.jpg; sourceTree = "<group>"; };
+		BC479C1826AA9AFA00F48817 /* SettingSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingSubViewController.h; sourceTree = "<group>"; };
+		BC479C1926AA9AFA00F48817 /* SettingSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingSubViewController.m; sourceTree = "<group>"; };
+		BC479C1B26AAB17400F48817 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +271,7 @@
 				BC479C0826AA57BD00F48817 /* sevenOne.jpg */,
 				BC479C0A26AA57E400F48817 /* sevenTwo.jpg */,
 				BC479C0C26AA580400F48817 /* sevenThree.jpg */,
+				BC479C1B26AAB17400F48817 /* white.png */,
 				BC42F81526A7D052009BD5C6 /* AppDelegate.h */,
 				BC42F81626A7D052009BD5C6 /* AppDelegate.m */,
 				BC42F81826A7D052009BD5C6 /* SceneDelegate.h */,
@@ -284,6 +290,8 @@
 				BC42F86626A7FD7C009BD5C6 /* SingingViewController.m */,
 				BC42F87B26A80939009BD5C6 /* SettingViewController.h */,
 				BC42F87C26A80939009BD5C6 /* SettingViewController.m */,
+				BC479C1826AA9AFA00F48817 /* SettingSubViewController.h */,
+				BC479C1926AA9AFA00F48817 /* SettingSubViewController.m */,
 				BC42F88326A841AE009BD5C6 /* FirstTableViewCell.h */,
 				BC42F88426A841AE009BD5C6 /* FirstTableViewCell.m */,
 				BC42F88626A841B5009BD5C6 /* SecondTableViewCell.h */,
@@ -436,6 +444,7 @@
 				BC42F82526A7D054009BD5C6 /* LaunchScreen.storyboard in Resources */,
 				BC479BFD26A997C300F48817 /* xinge.png in Resources */,
 				BC42F82226A7D054009BD5C6 /* Assets.xcassets in Resources */,
+				BC479C1C26AAB17400F48817 /* white.png in Resources */,
 				BC479BE926A900AD00F48817 /* gerenzhuye.jpg in Resources */,
 				BC479C0326AA487200F48817 /* fiveZero.jpg in Resources */,
 				BC42F87426A804E2009BD5C6 /* mine.png in Resources */,
@@ -491,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC479C1A26AA9AFA00F48817 /* SettingSubViewController.m in Sources */,
 				BC42F86726A7FD7C009BD5C6 /* SingingViewController.m in Sources */,
 				BC42F81D26A7D052009BD5C6 /* ViewController.m in Sources */,
 				BC42F88826A841B5009BD5C6 /* SecondTableViewCell.m in Sources */,

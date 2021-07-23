@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MineSubViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)UIBarButtonItem *leftButton;
 @property(nonatomic, strong)UIBarButtonItem *rightButton;
 @property(nonatomic, strong)UIButton *headButton;
+@property MineSubViewController *mineSubViewController;
 
 
 //滚动视图

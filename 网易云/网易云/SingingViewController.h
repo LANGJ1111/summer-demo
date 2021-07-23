@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SingingViewController : UIViewController
 
+@property(nonatomic, strong)UILabel *labelOne;
+@property(nonatomic, strong)UILabel *labelTwo;
+@property(nonatomic, strong)UILabel *labelThree;
+
 @end
 
 NS_ASSUME_NONNULL_END
