@@ -47,6 +47,11 @@
 		BC04116F26B8E48600C8F301 /* secondimage4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04116E26B8E48600C8F301 /* secondimage4.jpg */; };
 		BC04117126B8E48E00C8F301 /* secondimage5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04117026B8E48E00C8F301 /* secondimage5.jpg */; };
 		BC04117326B8E7EA00C8F301 /* fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = BC04117226B8E7EA00C8F301 /* fanhui.png */; };
+		BC04128A26BACC2800C8F301 /* start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04128626BACC2800C8F301 /* start.jpg */; };
+		BC04128B26BACC2800C8F301 /* main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04128726BACC2800C8F301 /* main.jpg */; };
+		BC04128C26BACC2800C8F301 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04128826BACC2800C8F301 /* login.jpg */; };
+		BC04128D26BACC2800C8F301 /* register.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04128926BACC2800C8F301 /* register.jpg */; };
+		BC04129026BACC6F00C8F301 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC04128F26BACC6F00C8F301 /* StartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +131,12 @@
 		BC04116E26B8E48600C8F301 /* secondimage4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secondimage4.jpg; sourceTree = "<group>"; };
 		BC04117026B8E48E00C8F301 /* secondimage5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secondimage5.jpg; sourceTree = "<group>"; };
 		BC04117226B8E7EA00C8F301 /* fanhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanhui.png; sourceTree = "<group>"; };
+		BC04128626BACC2800C8F301 /* start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = start.jpg; path = "../../../学生管理系统/学生管理系统/start.jpg"; sourceTree = "<group>"; };
+		BC04128726BACC2800C8F301 /* main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = main.jpg; path = "../../../学生管理系统/学生管理系统/main.jpg"; sourceTree = "<group>"; };
+		BC04128826BACC2800C8F301 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = login.jpg; path = "../../../学生管理系统/学生管理系统/login.jpg"; sourceTree = "<group>"; };
+		BC04128926BACC2800C8F301 /* register.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = register.jpg; path = "../../../学生管理系统/学生管理系统/register.jpg"; sourceTree = "<group>"; };
+		BC04128E26BACC6F00C8F301 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		BC04128F26BACC6F00C8F301 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +192,8 @@
 				BC0410EE26B7DC7A00C8F301 /* AppDelegate.m */,
 				BC0410F026B7DC7A00C8F301 /* SceneDelegate.h */,
 				BC0410F126B7DC7A00C8F301 /* SceneDelegate.m */,
+				BC04128E26BACC6F00C8F301 /* StartViewController.h */,
+				BC04128F26BACC6F00C8F301 /* StartViewController.m */,
 				BC04112226B7DEDD00C8F301 /* LoginViewController.h */,
 				BC04112326B7DEDD00C8F301 /* LoginViewController.m */,
 				BC04113D26B8186C00C8F301 /* RegisterViewController.h */,
@@ -233,6 +246,10 @@
 		BC04112926B7E70400C8F301 /* picture */ = {
 			isa = PBXGroup;
 			children = (
+				BC04128826BACC2800C8F301 /* login.jpg */,
+				BC04128726BACC2800C8F301 /* main.jpg */,
+				BC04128926BACC2800C8F301 /* register.jpg */,
+				BC04128626BACC2800C8F301 /* start.jpg */,
 				BC04117226B8E7EA00C8F301 /* fanhui.png */,
 				BC04112626B7E6FF00C8F301 /* login_button.png */,
 				BC04112526B7E6FF00C8F301 /* register_button.png */,
@@ -360,9 +377,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC04128D26BACC2800C8F301 /* register.jpg in Resources */,
 				BC04115B26B8D42800C8F301 /* firsthead5.jpg in Resources */,
 				BC0410FD26B7DC7C00C8F301 /* LaunchScreen.storyboard in Resources */,
+				BC04128A26BACC2800C8F301 /* start.jpg in Resources */,
 				BC04116726B8D68400C8F301 /* firstimage5.jpg in Resources */,
+				BC04128B26BACC2800C8F301 /* main.jpg in Resources */,
 				BC04116526B8D66A00C8F301 /* firstimage4.jpg in Resources */,
 				BC04116126B8D63500C8F301 /* firstimage2.jpg in Resources */,
 				BC04114F26B82DDF00C8F301 /* background.jpg in Resources */,
@@ -371,6 +391,7 @@
 				BC0410FA26B7DC7C00C8F301 /* Assets.xcassets in Resources */,
 				BC04117126B8E48E00C8F301 /* secondimage5.jpg in Resources */,
 				BC04116F26B8E48600C8F301 /* secondimage4.jpg in Resources */,
+				BC04128C26BACC2800C8F301 /* login.jpg in Resources */,
 				BC04116D26B8E47000C8F301 /* secondimage3.jpg in Resources */,
 				BC04112726B7E6FF00C8F301 /* register_button.png in Resources */,
 				BC04115926B8D40C00C8F301 /* firsthead4.jpg in Resources */,
@@ -420,6 +441,7 @@
 				BC04113626B7E80B00C8F301 /* ViewController3.m in Sources */,
 				BC04113926B7E81100C8F301 /* ViewController4.m in Sources */,
 				BC04114D26B827B400C8F301 /* HeadTableViewCell.m in Sources */,
+				BC04129026BACC6F00C8F301 /* StartViewController.m in Sources */,
 				BC04114426B8253900C8F301 /* MomentsViewController.m in Sources */,
 				BC04114A26B8266400C8F301 /* SecondTableViewCell.m in Sources */,
 			);

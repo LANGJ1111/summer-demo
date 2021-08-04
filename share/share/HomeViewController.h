@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign)int *guanzhu;
 @property (nonatomic, assign)int *share;
 
+@property (nonatomic, assign)int zanIsSelected;
+
 @end
 
 NS_ASSUME_NONNULL_END

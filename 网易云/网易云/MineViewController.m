@@ -34,7 +34,7 @@
     self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
     self.navigationController.view.tintColor = [UIColor blackColor];
     
-    _leftButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"yunpan.png"] style:UIBarButtonItemStylePlain target:self action:@selector(pressLeft)];
+    _leftButton = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"yunpan.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(pressLeft)];
     self.navigationItem.leftBarButtonItem = _leftButton;
     
     _rightButton = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"xiaotouxiang.jpeg"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStyleDone target:self action:@selector(pressRight)];

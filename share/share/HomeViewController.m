@@ -46,6 +46,7 @@
     _share[1] = 28;
     _share[2] = 59;
     _share[3] = 99;
+    _zanIsSelected = NO;
 
     _firstText = [NSMutableArray arrayWithObjects:@"假日", @"国外画册欣赏", @"collection扁平设计", @"板式整理术：高效解决多风格要求", nil];
     _secondText = [NSMutableArray arrayWithObjects:@"share小白", @"share小王", @"share小吕", @"share小顶", nil];
@@ -100,11 +101,11 @@
         _secondCell.secondLabel.text = _secondText[(int)indexPath.section - 1];
         _secondCell.secondLabel.font = [UIFont systemFontOfSize:13];
         _secondCell.secondLabel.numberOfLines = 0;
-        _secondCell.thirdLabel.frame = CGRectMake(210, 75, 170, 15);
+        _secondCell.thirdLabel.frame = CGRectMake(210, 82, 170, 15);
         _secondCell.thirdLabel.text = _thirdText[(int)indexPath.section - 1];
         _secondCell.thirdLabel.font = [UIFont systemFontOfSize:15];
         _secondCell.thirdLabel.numberOfLines = 0;
-        _secondCell.fourthLabel.frame = CGRectMake(210, 95, 170, 15);
+        _secondCell.fourthLabel.frame = CGRectMake(210, 105, 170, 15);
         _secondCell.fourthLabel.text = _fourthText[(int)indexPath.section - 1];
         _secondCell.fourthLabel.font = [UIFont systemFontOfSize:13];
         _secondCell.fourthLabel.numberOfLines = 0;
@@ -149,6 +150,8 @@
         _secondCell.thirdButton.tag = indexPath.section + 699;
         [_secondCell.thirdButton addTarget:self action:@selector(pressThird:) forControlEvents:UIControlEventTouchUpInside];
         
+        _secondCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
         return _secondCell;
     }
 }
@@ -158,10 +161,12 @@
         button.selected = NO;
         _zan[button.tag - 500]--;
         [button setTitle:[NSString stringWithFormat:@"%d", _zan[button.tag - 500]] forState:UIControlStateNormal];
+        _zanIsSelected = NO;
     } else {
         button.selected = YES;
         _zan[button.tag - 500]++;
         [button setTitle:[NSString stringWithFormat:@"%d", _zan[button.tag - 500]] forState:UIControlStateNormal];
+        _zanIsSelected = YES;
     }
 }
 
@@ -176,13 +181,23 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    int a = [_secondCell.secondButton.titleLabel.text intValue];
-//    a++;
-//    [_secondCell.secondButton setTitle:[NSString stringWithFormat:@"%d", a] forState:UIControlStateNormal];
     if (indexPath.section == 1) {
         SubHomeViewController *subHomeViewController = [[SubHomeViewController alloc] init];
+        subHomeViewController.zan = _zan[0];
+        subHomeViewController.guanzhu = _guanzhu[0];
+        subHomeViewController.share = _share[0];
+        subHomeViewController.zanIsSelected = _zanIsSelected;
+        subHomeViewController.backBlock = ^(int zanNumber, int guanzhuNumber, int shareNumber) {
+            self.zan[0] = zanNumber;
+            self.guanzhu[0] = guanzhuNumber;
+            self.share[0] = shareNumber;
+        };
         [self.navigationController pushViewController:subHomeViewController animated:YES];
     }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [_tableView reloadData];
 }
 
 @end

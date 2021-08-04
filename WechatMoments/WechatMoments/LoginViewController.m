@@ -22,30 +22,30 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    UIButton *logInButton = [[UIButton alloc] initWithFrame:CGRectMake(80, 510, 110, 53)];
-    [logInButton setImage:[UIImage imageNamed:@"login_button.png"] forState:UIControlStateNormal];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    imageView.image = [UIImage imageNamed:@"login.jpg"];
+    [self.view addSubview:imageView];
+    
+    UIButton *logInButton = [[UIButton alloc] initWithFrame:CGRectMake(17, 527, 350, 56)];
+    logInButton.backgroundColor = [UIColor clearColor];
     logInButton.layer.masksToBounds = YES;
-    logInButton.layer.cornerRadius = 10;
+    logInButton.layer.cornerRadius = 20;
     [logInButton addTarget:self action:@selector(pressLogIn) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:logInButton];
     
-    UIButton *registerButton = [[UIButton alloc] initWithFrame:CGRectMake(200, 510, 110, 53)];
-    [registerButton setImage:[UIImage imageNamed:@"register_button.png"] forState:UIControlStateNormal];
-    registerButton.layer.masksToBounds = YES;
-    registerButton.layer.cornerRadius = 10;
+    UIButton *registerButton = [[UIButton alloc] initWithFrame:CGRectMake(195, 597, 65, 20)];
+    registerButton.backgroundColor = [UIColor clearColor];
     [registerButton addTarget:self action:@selector(pressRegister) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:registerButton];
     
-    _userNameTextField = [[UITextField alloc] initWithFrame:CGRectMake(90, 347, 250, 60)];
+    _userNameTextField = [[UITextField alloc] initWithFrame:CGRectMake(90, 365, 250, 60)];
     _userNameTextField.placeholder = @"请输入用户名";
-    _userNameTextField.borderStyle = UITextBorderStyleRoundedRect;
     _userNameTextField.font = [UIFont systemFontOfSize:23];
-    _userNameTextField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     [self.view addSubview:_userNameTextField];
     
-    _passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(90, 423, 250, 50)];
+    _passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(90, 450, 250, 50)];
     _passwordTextField.placeholder = @"请输入密码";
-    _passwordTextField.borderStyle = UITextBorderStyleRoundedRect;
     _passwordTextField.font = [UIFont systemFontOfSize:23];
     _passwordTextField.secureTextEntry = YES;
     [self.view addSubview:_passwordTextField];
@@ -95,9 +95,7 @@
 - (void)pressRegister {
     RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
     registerViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self.presentingViewController dismissViewControllerAnimated:NO completion:nil];
     [self presentViewController:registerViewController animated:YES completion:nil];
 }
-
 
 @end

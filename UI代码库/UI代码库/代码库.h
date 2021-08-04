@@ -55,3 +55,17 @@ UIButton *<#name#> = [[UIButton alloc] init];
 //<#name#>.layer.masksToBounds = YES;
 <#name#>.layer.cornerRadius = <#cornerRadius#>;
 [<#view#> addSubview:<#buttonName#>];
+
+@property(nonatomic, strong)UIBarButtonItem *<#barButtonItemName#>;
+@property(nonatomic, strong)UIScrollView *<#scrollViewName#>;
+@property(nonnull, strong)UIView *<#viewName#>;
+
+[[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"<#imageName#>"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:<#UIBarButtonItemStyle#> target:self action:@selector(<#action#>)];
+
+self.navigationController.navigationBar.barTintColor = <#barTintColor#>;
+[self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:<#textSize#>], NSFontAttributeName, nil]];
+self.navigationController.navigationBar.tintColor = <#tintColor#>;
+self.navigationController.navigationBar.translucent = NO;
+self.navigationItem.title = <#title#>;
+
+

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UITextField *userName;
 @property (nonatomic, strong) UITextField *password;
+@property (nonatomic, strong) UIButton *backButton;
 
 @end
 

@@ -18,12 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //导航栏是否透明
-    self.view.backgroundColor = [UIColor greenColor];
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor yellowColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:24], NSFontAttributeName, nil]];
+    self.navigationController.navigationBar.tintColor = [UIColor redColor];
     self.navigationController.navigationBar.translucent = NO;
-    //设置导航栏风格
-    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
-    self.title = @"根视图";
+    self.navigationItem.title = @"SHARE";
+
+    
     UIBarButtonItem *next = [[UIBarButtonItem alloc] initWithTitle:@"下一级" style:UIBarButtonItemStylePlain target:self action:@selector(pressNext)];
     self.navigationItem.rightBarButtonItem = next;
 }

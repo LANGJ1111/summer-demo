@@ -44,7 +44,12 @@
     _password.secureTextEntry = YES;
     [self.view addSubview:_password];
     
-    
+    _backButton = [[UIButton alloc] init];
+    _backButton.frame = CGRectMake(10, 50, 30, 30);
+    _backButton.backgroundColor = [UIColor clearColor];
+    [_backButton setImage:[UIImage imageNamed:@"fanhui.png"] forState:UIControlStateNormal];
+    [_backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_backButton];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -52,19 +57,24 @@
 }
 
 - (void)pressRegisterButton {
-//    if ([_userName.text isEqualToString:@""] || [_password.text isEqualToString:@""]) {
-//            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"账号或密码不能为空！" message:@"" preferredStyle:UIAlertControllerStyleAlert];
-//            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleCancel handler:nil];
-//            [alert addAction:action];
-//            [self presentViewController:alert animated:YES completion:nil];
-//
-//    } else {
+    if ([_userName.text isEqualToString:@""] || [_password.text isEqualToString:@""]) {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"账号或密码不能为空！" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:action];
+            [self presentViewController:alert animated:YES completion:nil];
+
+    } else {
         LogInViewController *logInViewController = (LogInViewController *)self.presentingViewController;
         logInViewController.userName = _userName.text;
         logInViewController.password = _password.text;
-        logInViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+        logInViewController.userNameTextField.text = _userName.text;
+        logInViewController.passwordTextField.text = _password.text;
         [self.presentingViewController dismissViewControllerAnimated:NO completion:nil];
-//    }
+    }
+}
+
+- (void)back {
+    [self.presentingViewController dismissViewControllerAnimated:NO completion:nil];
 }
 
 @end
