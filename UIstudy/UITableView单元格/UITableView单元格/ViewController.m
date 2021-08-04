@@ -102,7 +102,7 @@
 //选中单元格
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"选中单元格 %d %d", indexPath.section, indexPath.row);
-    }
+}
 
 //取消选中单元格
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {

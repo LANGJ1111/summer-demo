@@ -42,7 +42,8 @@
     label.textColor = [UIColor blueColor];
     
     //将任何类型的控件添加到导航按钮的方法
-    UIBarButtonItem *item3 = [[UIBarButtonItem alloc] initWithCustomView:label];
+    UIBarButtonItem *item3 = [[UIBarButtonItem alloc] init];
+    item3.customView = label;
     //创建按钮数组
     NSArray *arrayBtn = [NSArray arrayWithObjects:rightBtn, item3, nil];
     //将右侧按钮赋值

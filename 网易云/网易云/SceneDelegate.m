@@ -22,7 +22,9 @@
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     //设置window
-    self.window = [[UIWindow alloc] initWithWindowScene:scene];
+    self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
+    [self.window makeKeyAndVisible];
+    
     
     //设置home和setting视图
     FindingViewController *findingViewController = [[FindingViewController alloc] init];
@@ -44,7 +46,7 @@
     
     //设置分栏控制器
     UITabBarController *controllerTabBar = [[UITabBarController alloc] init];
-    NSArray *arrayNavigationControllers = [NSArray arrayWithObjects:findingNavigationController, communityNavigationController, mineNavigationController, singingNavigationController,  settingNavigationController, nil];
+    NSMutableArray *arrayNavigationControllers = [NSMutableArray arrayWithObjects:findingNavigationController, communityNavigationController, mineNavigationController, singingNavigationController,  settingNavigationController, nil];
     controllerTabBar.viewControllers = arrayNavigationControllers;
     controllerTabBar.tabBar.tintColor = [UIColor redColor];
     //将分栏控制器做为根视图控制器
@@ -54,7 +56,7 @@
     //设置分栏控制器的工具栏的透明度
     controllerTabBar.tabBar.translucent = NO;
     
-    [self.window makeKeyAndVisible];
+    
 }
 
 

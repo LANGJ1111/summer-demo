@@ -14,18 +14,19 @@
 @implementation ViewController
 
 - (void)createUI {
-    UILabel *label = [UILabel new];
+    UILabel *label = [[UILabel alloc] init];
     label.text = @"This is UILabel";
     label.frame = CGRectMake(100, 100, 160, 160);
     label.backgroundColor = [UIColor clearColor];
-    self.view.backgroundColor = [UIColor grayColor];
-    [self.view addSubview:label];
     label.font = [UIFont systemFontOfSize:30];
     label.textColor = [UIColor whiteColor];
     label.shadowColor = [UIColor blackColor];
     label.shadowOffset = CGSizeMake(5, 5);
     label.textAlignment = NSTextAlignmentCenter;    //Left,Center,Right
     label.numberOfLines = 0;    //默认1，为0时自动计算所需行数
+    
+    self.view.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:label];
 }
 
 - (void)viewDidLoad {

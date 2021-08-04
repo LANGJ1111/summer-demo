@@ -76,9 +76,12 @@
     //整页滚动
     _scrollView.pagingEnabled = YES;
     //画布大小
-    _scrollView.contentSize = CGSizeMake(390 * 4, 455);
+    _scrollView.contentSize = CGSizeMake(390 * 4, 450);
     //边缘弹动
-    _scrollView.bounces = NO;
+//    _scrollView.bounces = NO;
+    _scrollView.alwaysBounceVertical = NO;
+    _scrollView.alwaysBounceHorizontal = NO;
+    
     //横向滚动条
     _scrollView.showsHorizontalScrollIndicator = YES;
     //纵向滚动条
