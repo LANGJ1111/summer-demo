@@ -63,7 +63,7 @@
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleCancel handler:nil];
         [alert addAction:action];
         [self presentViewController:alert animated:YES completion:nil];
-        
+
     }else {
         MainViewController *mainViewController = [[MainViewController alloc] init];
         mainViewController.modalPresentationStyle = UIModalPresentationFullScreen;

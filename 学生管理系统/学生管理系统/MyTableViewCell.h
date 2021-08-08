@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong) UILabel *classLabel;
 @property(nonatomic, strong) UILabel *gradeLabel;
 
+- (void)transfer:(NSIndexPath *)indexPath nameArray:(NSMutableArray *)nameArray classArray:(NSMutableArray *)classArray andGradeArray:(NSMutableArray *)gradeArray;
+
 @end
 
 NS_ASSUME_NONNULL_END

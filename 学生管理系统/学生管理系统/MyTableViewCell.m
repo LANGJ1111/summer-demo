@@ -9,9 +9,16 @@
 
 @implementation MyTableViewCell
 
+- (void)transfer:(NSIndexPath *)indexPath nameArray:(NSMutableArray *)nameArray classArray:(NSMutableArray *)classArray andGradeArray:(NSMutableArray *)gradeArray {
+    self.nameLabel.text = nameArray[indexPath.row];
+    self.classLabel.text = classArray[indexPath.row];
+    self.gradeLabel.text = gradeArray[indexPath.row];
+
+}
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if ([self.reuseIdentifier isEqualToString:@"main"]) {
+    if ([self.reuseIdentifier isEqualToString:@"my"]) {
         _nameLabel = [[UILabel alloc] init];
         _nameLabel.frame = CGRectMake(10, 0, 120, 40);
         _nameLabel.backgroundColor = [UIColor clearColor];
