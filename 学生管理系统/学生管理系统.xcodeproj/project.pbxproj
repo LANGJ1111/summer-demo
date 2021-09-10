@@ -21,7 +21,6 @@
 		BC04127426BA7F6100C8F301 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC04127326BA7F6100C8F301 /* StartViewController.m */; };
 		BC04127826BA7FA500C8F301 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04127726BA7FA500C8F301 /* login.jpg */; };
 		BC04127A26BA812E00C8F301 /* start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04127926BA812E00C8F301 /* start.jpg */; };
-		BC04127C26BA8E3800C8F301 /* register.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04127B26BA8E3800C8F301 /* register.jpg */; };
 		BC04127E26BA928500C8F301 /* main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC04127D26BA928500C8F301 /* main.jpg */; };
 		BC04128126BA941C00C8F301 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC04128026BA941C00C8F301 /* MyTableViewCell.m */; };
 		BC04129326BFC08A00C8F301 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC04129226BFC08A00C8F301 /* AddViewController.m */; };
@@ -29,6 +28,7 @@
 		BC04129926BFC09C00C8F301 /* ChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC04129826BFC09C00C8F301 /* ChangeViewController.m */; };
 		BC04129C26BFC0A400C8F301 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC04129B26BFC0A400C8F301 /* SearchViewController.m */; };
 		BC0412AC26BFCC1E00C8F301 /* SubSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0412AB26BFCC1E00C8F301 /* SubSearchViewController.m */; };
+		BC4E6ADE26E4C2F700386779 /* register.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC4E6ADD26E4C2F700386779 /* register.jpg */; };
 		BC7D6DB526BFE86A00AC8AEE /* sub.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC7D6DB426BFE86A00AC8AEE /* sub.jpg */; };
 		BC7D6DB726BFE96B00AC8AEE /* queren.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7D6DB626BFE96B00AC8AEE /* queren.png */; };
 		BC7D6DB926BFEA1C00AC8AEE /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BC7D6DB826BFEA1B00AC8AEE /* home.png */; };
@@ -78,7 +78,6 @@
 		BC04127326BA7F6100C8F301 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		BC04127726BA7FA500C8F301 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
 		BC04127926BA812E00C8F301 /* start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = start.jpg; sourceTree = "<group>"; };
-		BC04127B26BA8E3800C8F301 /* register.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = register.jpg; sourceTree = "<group>"; };
 		BC04127D26BA928500C8F301 /* main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main.jpg; sourceTree = "<group>"; };
 		BC04127F26BA941C00C8F301 /* MyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
 		BC04128026BA941C00C8F301 /* MyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		BC04129B26BFC0A400C8F301 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		BC0412AA26BFCC1E00C8F301 /* SubSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubSearchViewController.h; sourceTree = "<group>"; };
 		BC0412AB26BFCC1E00C8F301 /* SubSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubSearchViewController.m; sourceTree = "<group>"; };
+		BC4E6ADD26E4C2F700386779 /* register.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = register.jpg; sourceTree = "<group>"; };
 		BC7D6DB426BFE86A00AC8AEE /* sub.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sub.jpg; sourceTree = "<group>"; };
 		BC7D6DB626BFE96B00AC8AEE /* queren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = queren.png; sourceTree = "<group>"; };
 		BC7D6DB826BFEA1B00AC8AEE /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 			children = (
 				BC04127926BA812E00C8F301 /* start.jpg */,
 				BC04127726BA7FA500C8F301 /* login.jpg */,
-				BC04127B26BA8E3800C8F301 /* register.jpg */,
+				BC4E6ADD26E4C2F700386779 /* register.jpg */,
 				BC04127D26BA928500C8F301 /* main.jpg */,
 				BC7D6DB426BFE86A00AC8AEE /* sub.jpg */,
 				BC7D6DB626BFE96B00AC8AEE /* queren.png */,
@@ -310,10 +310,10 @@
 				BC04124326BA6C7500C8F301 /* LaunchScreen.storyboard in Resources */,
 				BC04124026BA6C7500C8F301 /* Assets.xcassets in Resources */,
 				BC04127A26BA812E00C8F301 /* start.jpg in Resources */,
+				BC4E6ADE26E4C2F700386779 /* register.jpg in Resources */,
 				BC7D6DB926BFEA1C00AC8AEE /* home.png in Resources */,
 				BC04127826BA7FA500C8F301 /* login.jpg in Resources */,
 				BC7D6DB526BFE86A00AC8AEE /* sub.jpg in Resources */,
-				BC04127C26BA8E3800C8F301 /* register.jpg in Resources */,
 				BC04123E26BA6C7300C8F301 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
